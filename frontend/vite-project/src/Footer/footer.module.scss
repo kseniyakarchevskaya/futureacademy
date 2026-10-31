@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:wght@0,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #f5f6f8;
+
+    .feedbackCard {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 30px;
+        left: 19vw;
+        width: 62vw;
+        height: 27vh;
+        background-color: #ffffff;
+        border-radius: 2vh;
+        box-shadow: 0 1vh 3vh rgba(0, 12, 44, 0.05);
+        z-index: 5;
+
+        .owlBlock {
+            display: flex;
+            position: relative;
+            align-items: center;
+            width: 50%;
+            height: 130%;
+            .owlImg{
+                position: absolute;
+                top: 9vh;
+                left: -7vw;
+            }
+            
+
+        }
+
+        .feedbackForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 38%;
+            height: 72%;
+
+            .inputRowFull {
+                display: flex;
+                width: 100%;
+                height: 22%;
+
+                .formInput {
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    background-color: #e7e8ed;
+                    border: none;
+                    border-radius: 0.7vh;
+                    font-size: clamp(0.7rem, 0.85vw, 1rem);
+                    color: #051429;
+                    text-indent: 1vw;
+
+                    &:focus {
+                        outline: 0.1vh solid #ff9900;
+                    }
+                }
+            }
+
+            .inputRowSplit {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 22%;
+
+                .formInputSplit {
+                    width: 48%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    background-color: #e7e8ed;
+                    border: none;
+                    border-radius: 0.7vh;
+                    font-size: clamp(0.7rem, 0.85vw, 1rem);
+                    color: #051429;
+                    text-indent: 1vw;
+
+                    &:focus {
+                        outline: 0.1vh solid #ff9900;
+                    }
+                }
+            }
+
+            .submitRow {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 30%;
+
+                .disclaimer {
+                    display: flex;
+                    align-items: center;
+                    width: 52%;
+                    height: 100%;
+                    font-size: clamp(0.5rem, 0.62vw, 0.75rem);
+                    color: #92939b;
+                    line-height: 1.35;
+                }
+
+                .submitButton {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44%;
+                    height: 78%;
+                    background-color: #ff9418;
+                    border: none;
+                    border-radius: 0.8vh;
+                    font-size: clamp(0.7rem, 0.85vw, 1rem);
+                    font-weight: 700;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease;
+
+                    &:hover {
+                        background-color: #e9870e;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainFooter {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-height: 55vh;
+        background-color: #000c3b;
+
+        .footerGrid {
+            display: grid;
+            grid-template-columns: 1.05fr 1fr 1.55fr 1.2fr 1fr;
+            gap: 1.5vw;
+            width: 68%;
+            min-height: 45vh;
+            align-self: flex-end;
+
+            .contactsColumn {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-width: 0;
+                height: 90%;
+
+                .logoWrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 20%;
+                }
+                .footerLogo {
+                    width: 4vw;
+                    height: 5vh;
+                    object-fit: contain;
+                    filter: brightness(0) invert(1);
+                }
+                .phoneWrapper,
+                .addressWrapper,
+                .mailWrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    min-height: 10%;
+                }
+                .footerPhone {
+                    font-size: clamp(0.75rem, 1vw, 1.1rem);
+                    font-weight: 700;
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+                .footerAddress,
+                .footerMail {
+                    font-size: clamp(0.65rem, 0.8vw, 0.9rem);
+                    color: #c1c9de;
+                }
+                .footerMail {
+                    text-decoration: none;
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+                .socialsWrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 80%;
+                    height: 15%;
+                }
+                .socialIcon {
+                    width: 1.2vw;
+                    height: 2.5vh;
+                    object-fit: contain;
+                    cursor: pointer;
+                    filter: brightness(0) invert(0.7);
+                    &:hover {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+                .copyWrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 10%;
+                }
+                .footerCopy {
+                    font-size: 0.7rem;
+                    color: #7d88a8;
+                }
+            }
+
+            .linksColumn {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                min-width: 0;
+                height: 100%;
+
+                .columnTitle {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    min-height: 15%;
+                    font-size: clamp(0.75rem, 0.95vw, 1.1rem);
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+                .columnLink {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    min-height: 10%;
+                    font-size: clamp(0.65rem, 0.8vw, 0.9rem);
+                    color: #b5bfd8;
+                    text-decoration: none;
+                    line-height: 1.35;
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footerContainer {
+        min-height: auto;
+        padding-top: 24vh;
+
+        .feedbackCard {
+            top: 3vh;
+            left: 5%;
+            width: 90%;
+            height: 36vh;
+        }
+        .mainFooter {
+            min-height: 65vh;
+            padding-top: 12vh;
+            box-sizing: border-box;
+        }
+        .mainFooter .footerGrid {
+            width: 90%;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 3vw;
+            min-height: 49vh;
+        }
+        .mainFooter .contactsColumn {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 16px;
+            height: auto;
+        }
+        .mainFooter .contactsColumn .logoWrapper {
+            grid-row: span 2;
+        }
+        .mainFooter .contactsColumn .footerLogo {
+            width: 70px;
+            height: 48px;
+        }
+        .mainFooter .contactsColumn .socialsWrapper,
+        .mainFooter .contactsColumn .copyWrapper {
+            display: none;
+        }
+        .mainFooter .linksColumn .columnLink {
+            min-height: 8%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footerContainer {
+        padding-top: 0;
+        .feedbackCard {
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 92%;
+            height: auto;
+            min-height: 450px;
+            align-self: center;
+            flex-direction: column;
+            gap: 12px;
+            box-sizing: border-box;
+        }
+        .feedbackCard .owlBlock {
+            width: 100%;
+            height: 245px;
+        }
+        .feedbackCard .owlBlock .owlSpeech {
+            top: 4%;
+            left: 34%;
+            width: 61%;
+            height: 53%;
+        }
+        .feedbackCard .owlBlock .owlSpeech .owlTitle {
+            font-size: 1rem;
+        }
+        .feedbackCard .owlBlock .owlSpeech .owlText {
+            font-size: 0.72rem;
+        }
+        .feedbackCard .feedbackForm {
+            width: 88%;
+            height: 180px;
+        }
+        .feedbackCard .feedbackForm .inputRowFull,
+        .feedbackCard .feedbackForm .inputRowSplit {
+            height: 42px;
+        }
+        .feedbackCard .feedbackForm .submitRow {
+            height: 64px;
+        }
+        .feedbackCard .feedbackForm .submitRow .disclaimer {
+            font-size: 0.58rem;
+        }
+        .mainFooter {
+            min-height: 740px;
+            padding-top: 32px;
+        }
+        .mainFooter .footerGrid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px 20px;
+            min-height: 690px;
+            align-self: auto;
+        }
+        .mainFooter .contactsColumn {
+            grid-column: 1 / -1;
+            display: flex;
+            gap: 8px;
+        }
+        .mainFooter .contactsColumn .phoneWrapper,
+        .mainFooter .contactsColumn .addressWrapper,
+        .mainFooter .contactsColumn .mailWrapper {
+            min-height: auto;
+        }
+        .mainFooter .contactsColumn .socialsWrapper,
+        .mainFooter .contactsColumn .copyWrapper {
+            display: none;
+        }
+        .mainFooter .linksColumn {
+            gap: 7px;
+        }
+        .mainFooter .linksColumn .columnTitle {
+            min-height: auto;
+        }
+        .mainFooter .linksColumn .columnLink {
+            min-height: auto;
+            font-size: 0.72rem;
+        }
+    }
+}

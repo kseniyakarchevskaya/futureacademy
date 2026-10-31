@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.sec1 {
+    width: 100%;
+    height: 48vh;
+    background-image: url('../assets/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .txt {
+        display: flex;
+        flex-direction: column;
+        width: 64vw;
+        margin: 0 auto;
+        height: 40vh;
+        justify-content: center;
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 600;
+            height: 7vh;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    }
+}
+.featuresSection {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    height: 33vh;
+    margin: 0 auto;
+    .leftColumn {
+        display: flex;
+        width: 30vw;
+        height: 35vh;
+        align-items: center;
+        .bubbleContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 25vh;
+            background-image: url('../assets/logo3.png');
+            background-repeat: no-repeat;
+            .speechBubble {
+                display: flex;
+                justify-content: center;
+                width: 20vw;
+                height: 80vh;
+                .bubbleText {
+                    display: flex;
+                    align-items: center;
+                    width: 85%;
+                    height: 80%;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #051429;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+    .rightColumn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 62vw;
+        height: 40vh;
+
+        .featureCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 11vw;
+            height: 32vh;
+
+            .iconWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 20%;
+
+                .featureIcon {
+                    width: 2.2vw;
+                    height: 4.5vh;
+                    object-fit: contain;
+                }
+            }
+
+            .titleWrapper {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 15%;
+
+                .featureTitle {
+                    font-size: 1.25rem;
+                    font-weight: 800;
+                    color: #051429;
+                }
+            }
+
+            .textWrapper {
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                height: 65%;
+
+                .featureText {
+                    font-size: 0.85rem;
+                    color: #50586d;
+                    line-height: 1.5;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    div {
+        width: 64vw;
+        height: 62vh;
+        background-image: url('../assets/back4.png');
+        background-repeat: no-repeat;
+    }
+}
+.founderSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 60vh;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+
+    .contentGrid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 77vw;
+        height: 50vh;
+        margin: 0 auto;
+
+        .leftColumn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 18vw;
+            height: 44vh;
+
+            .imageBlock {
+                display: flex;
+                width: 100%;
+                height: 34vh;
+                border-radius: 2vh;
+                overflow: hidden;
+
+                .avatar {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .metaBlock {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 100%;
+                height: 8vh;
+
+                .name {
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: #051429;
+                }
+
+                .role {
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                    color: #9096a6;
+                }
+            }
+        }
+
+        .rightColumn {
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            height: 40vh;
+
+            .textBlock {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 35vh;
+
+                .paragraph {
+                    font-size: 0.85rem;
+                    color: #051429;
+                    line-height: 2;
+                    font-weight: 500;
+                }
+            }
+
+            .sourceBlock {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 4vh;
+
+                .sourceText {
+                    font-size: 0.8rem;
+                    color: #9096a6;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+.welcomeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 41vw;
+    height: 38vh;
+    background-color: #f8fafc;
+    align-items: center;
+    margin: 0 auto;
+
+    .titleWrapper {
+        display: flex;
+        align-items: center;
+        width: 63vw;
+        height: 7vh;
+        align-self: center;
+
+        .title {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #051429;
+        }
+    }
+
+    .featuresContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 63vw;
+        height: 28vh;
+        align-self: center;
+
+        .featureCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 18vw;
+            height: 24vh;
+
+            .iconWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 35%;
+
+                .icon {
+                    width: 3.5vw;
+                    height: 7vh;
+                    object-fit: contain;
+                }
+            }
+
+            .textWrapper {
+                display: flex;
+                align-items: flex-start;
+                width: 74%;
+                height: 60%;
+
+                .text {
+                    display: flex;
+                    align-items: flex-start;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0.95rem;
+                    font-weight: 500;
+                    color: #051429;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .featureCard:nth-child(4) {
+            width: 20vw;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 61vh;
+    background-image: url('../assets/bac2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    .zag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+    .sliderTrackWrapper {
+        display: flex;
+        align-items: center;
+        width: 92vw;
+        height: 42vh;
+        overflow: hidden;
+        margin: 0 auto;
+
+        .sliderTrack {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+
+            .teacherCard {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex-shrink: 0;
+                width: 13vw;
+                height: 28vh;
+                background-color: #ffffff;
+                border-radius: 2vh;
+                box-shadow: 0 0.5vh 2vh rgba(0, 12, 44, 0.04);
+                box-sizing: border-box;
+                transform: scale(0.95);
+
+                .avatarContainer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 35%;
+
+                    .avatarBorder {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 4.5vw;
+                        height: 4.5vw;
+                        border-radius: 50%;
+                        border: 0.25vh solid #ff9900;
+                        overflow: hidden;
+
+                        .avatar {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .nameWrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 86%;
+                    height: 15%;
+                    align-self: center;
+
+                    .name {
+                        font-size: 0.95rem;
+                        font-weight: 700;
+                        color: #051429;
+                        text-align: center;
+                    }
+                }
+
+                .infoWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 86%;
+                    height: 45%;
+                    align-self: center;
+
+                    .infoText {
+                        font-size: 0.7rem;
+                        color: #50586d;
+                        line-height: 1.4;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+.companiesSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100vw;
+	height: 43vh;
+	background-color: #f8fafc;
+	box-sizing: border-box;
+
+	.titleWrapper {
+		display: flex;
+		align-items: center;
+		width: 70vw;
+		height: 8vh;
+		margin: 0 auto;
+
+		.mainTitle {
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: #051429;
+		}
+	}
+
+	.logosGrid {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		justify-content: space-between;
+		width: 70vw;
+		height: 26vh;
+		margin: 0 auto;
+
+		.logoCard {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 10.5vw;
+			height: 11.5vh;
+			background-color: #ffffff;
+			border-radius: 1.5vh;
+			box-shadow: 0 0.4vh 1.5vh rgba(0, 12, 44, 0.02);
+			box-sizing: border-box;
+
+			.logoImg {
+				width: 60%;
+				height: 63%;
+				object-fit: contain;
+			}
+		}
+	}
+}

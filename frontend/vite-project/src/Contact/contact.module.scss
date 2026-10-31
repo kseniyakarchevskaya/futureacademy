@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.contactsSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100vw;
+	height: 70vh;
+	background-color: #f8fafc;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+
+	.breadcrumbsWrapper {
+		display: flex;
+		align-items: center;
+		width: 62vw;
+		height: 4vh;
+		align-self: center;
+
+		.inactiveCrumb {
+			font-size: 0.75rem;
+			color: #9096a6;
+			font-weight: 500;
+		}
+
+		.arrowCrumb {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 1.5vw;
+			height: 100%;
+			font-size: 0.75rem;
+			color: #9096a6;
+		}
+
+		.activeCrumb {
+			font-size: 0.75rem;
+			color: #051429;
+			font-weight: 500;
+		}
+	}
+
+	.titleWrapper {
+		display: flex;
+		align-items: center;
+		width: 62vw;
+		height: 8vh;
+		align-self: center;
+
+		.mainTitle {
+			font-size: 2.2rem;
+			font-weight: 800;
+			color: #051429;
+		}
+	}
+
+	.contentGrid {
+		display: flex;
+		justify-content: space-between;
+		width: 62vw;
+		height: 52vh;
+		align-self: center;
+
+		.infoColumn {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			width: 18vw;
+			height: 90%;
+
+			.infoBlock {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 10%;
+
+				.iconWrapper {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					width: 2vw;
+					height: 100%;
+
+					.infoIcon {
+						width: 1.1vw;
+						height: 2.2vh;
+						object-fit: contain;
+					}
+				}
+
+				.textWrapper {
+					display: flex;
+					align-items: center;
+					width: 16vw;
+					height: 100%;
+
+					.phoneLink {
+						font-size: 1rem;
+						font-weight: 700;
+						color: #051429;
+						text-decoration: none;
+					}
+
+					.mailLink {
+						font-size: 0.85rem;
+						font-weight: 500;
+						color: #051429;
+						text-decoration: none;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			.infoBlockAddress {
+				display: flex;
+				align-items: flex-start;
+				width: 100%;
+				height: 15%;
+
+				.iconWrapperAddress {
+					display: flex;
+					align-items: flex-start;
+					width: 2vw;
+					height: 100%;
+
+					.infoIcon {
+						width: 1.1vw;
+						height: 2.2vh;
+						object-fit: contain;
+					}
+				}
+
+				.textWrapperAddress {
+					display: flex;
+					align-items: flex-start;
+					width: 16vw;
+					height: 100%;
+
+					.addressText {
+						font-size: 0.85rem;
+						font-weight: 500;
+						color: #051429;
+						line-height: 1.4;
+					}
+				}
+			}
+
+			.socialsWrapper {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 48%;
+				height: 4%;
+
+				.socialIcon {
+					width: 1vw;
+					height: 1.5vh;
+				}
+			}
+
+			.buttonWrapper {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 15%;
+
+				.dzenButton {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 6vw;
+					height: 4.5vh;
+                    border: none;
+                    background-color: transparent;
+				}
+			}
+		}
+
+		.mapColumn {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			width: 42vw;
+			height: 100%;
+
+			.mapContainer {
+				width: 100%;
+				height: 46vh;
+			}
+		}
+	}
+}
